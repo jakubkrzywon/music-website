@@ -1,6 +1,6 @@
-# website-guitar
-Sample page with animations
+Music page
+Basic layout with animations and rwd.
 
 
-<a href="https://dagmarawieczorek.github.io/website-guitar/">See the page<br>
-  <img src="https://github.com/dagmarawieczorek/website-guitar/blob/master/dist/images/music.png?raw=true"/></a>
+<a href="https://jakubkrzywon.github.io/music-website/">See the page<br>
+  <img src="https://github.com/jakubkrzywon/music-website/blob/master/dist/images/music.png?raw=true"/></a>
