@@ -1,0 +1,48 @@
+
+$color-main: rgb(0, 251, 224);
+
+
+@import "partials/_normalize.scss";
+@import "components/layout";
+@import "components/page-header";
+@import "components/page-hero";
+@import "components/main-articles";
+@import "components/meet-team";
+@import "components/contact-us";
+
+
+.main-parallax{
+
+    height: 510px;
+    background-color: #444;
+    background-image:
+            linear-gradient(rgba(black, 0.6),rgba(black, 0.6)),
+            url(../images/main-banner2.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.main-parallax-title{
+    font-size: 42;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+
+    span{
+        color: $color-main;
+    }
+}
+
+.main-parallax-text{
+    max-width: 800px;
+    font-size: 19px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 70px 0;
+}
+
+

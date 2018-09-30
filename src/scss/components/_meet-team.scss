@@ -1,0 +1,73 @@
+
+.meet-team{
+    background: lightgrey;
+    text-align: center;
+    img{
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+}
+.meet-team-link{
+    position: relative;
+    display:block;
+}
+.meet-team-link-over{
+    border-radius: 50%;
+    display: block;
+    position:absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(black, 0.9);
+    opacity:0;
+
+}
+
+
+.meet-team-link-over::before,
+.meet-team-link-over::before,
+.meet-team-link-over::after{
+    content: "";
+    height: 70px;
+    width:1px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+.meet-team-link:hover .meet-team-link-over{
+    opacity:1;
+}
+
+.meet-team-link:hover .meet-team-link-over::after{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.meet-team-link:hover .meet-team-link-over::before{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.meet-team-btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 22px 50px;
+    background: none;
+    box-shadow: inset 0 0 0 50px #333;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.meet-team-btn:hover{
+    box-shadow: inset 0 0 0 5px #333;
+    color: #333;
+}
+
